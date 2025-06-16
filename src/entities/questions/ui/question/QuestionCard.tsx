@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { QuestionType } from '../../api/types'
 import styles from './styles.module.css'
 import { NavLink } from 'react-router'
+import Label from '../../../../shared/ui/label/Label'
 
 type Props = {
   question: QuestionType
@@ -19,12 +20,8 @@ const QuestionCard = ({ question }: Props) => {
       {open && (
         <div className={styles.question}>
           <ul className={styles.list}>
-            <li>
-              Рейтинг: <span>{question.rate}</span>
-            </li>
-            <li>
-              Сложность: <span>{question.complexity}</span>
-            </li>
+            <Label value={question.rate} name="Рейтинг" />
+            <Label value={question.complexity} name="Сложность" />
           </ul>
           <p>{question.description}</p>
           <NavLink className={styles.link} to={`/questions/${question.id}`}>

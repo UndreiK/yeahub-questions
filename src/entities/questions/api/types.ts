@@ -20,3 +20,13 @@ export type Questions = {
   page: number
   total: number
 }
+
+export interface QuestionApi {
+  page: number
+  limit?: number
+  specialization: number | null
+  skills: number[]
+  complexity: number[]
+  rate: number[]
+  title: string
+}

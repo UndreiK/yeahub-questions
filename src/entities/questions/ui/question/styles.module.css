@@ -14,28 +14,6 @@
   list-style: none;
 }
 
-.list li {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #f8f8f8;
-  height: 33px;
-  width: 110px;
-  border-radius: 8px;
-  padding: 6px 10px;
-  gap: 10px;
-  font-size: 14px;
-}
-
-span {
-  height: 21px;
-  width: 17px;
-  padding: 2px 4px;
-  color: #fff;
-  background-color: #6a0bff;
-  border-radius: 4px;
-}
-
 .link {
   display: flex;
   justify-content: flex-end;

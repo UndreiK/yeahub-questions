@@ -12,7 +12,6 @@ type Props = {
 
 const Skill = ({ items, total, onShowMore }: Props) => {
   const [isOpen, setIsOpen] = useState(false)
-  // const [selected, setSelected] = useState<number[] | []>([])
   const skills = useAppSelector(selectSkills)
 
   const dispatch = useAppDispatch()
@@ -23,11 +22,6 @@ const Skill = ({ items, total, onShowMore }: Props) => {
   }
 
   const handleGetSkill = (id: number, title: string) => {
-    // if (selected.includes(id)) {
-    //   setSelected((prev) => prev.filter((item) => item !== id))
-    // } else {
-    //   setSelected((prev) => [...prev, id])
-    // }
     dispatch(setSkill({ id, title }))
   }
 
@@ -40,10 +34,6 @@ const Skill = ({ items, total, onShowMore }: Props) => {
         {items?.map((skill) => (
           <li
             key={skill.id}
-            // className={
-            //   skills.includes(skill.id) ? styles.selected : styles.list_item
-            // }
-
             className={
               skills.some((item) => item.id === skill.id)
                 ? styles.selected

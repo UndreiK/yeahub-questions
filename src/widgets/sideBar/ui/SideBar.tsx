@@ -18,9 +18,6 @@ import Search from '../../../features/search'
 const SideBar = () => {
   const [limitSpecItems, setLimitSpecItems] = useState(5)
   const [limitSkillItems, setLimitSkillItems] = useState(5)
-  // const [specializationsId, setSpecializationsId] = useState<number | null>(
-  //   null
-  // )
 
   const specialization = useAppSelector(selectSpecialization)
   const dispath = useAppDispatch()
@@ -40,11 +37,6 @@ const SideBar = () => {
     dispath(setSpecialization(id))
     dispath(setSkill(null))
   }
-
-  // const handleGetSkillId = (id: number) => {
-  //   setSkillsId(id)
-  //   setSpecializationsId(null)
-  // }
 
   const onShowMoreSpecializations = (total: number) => {
     setLimitSpecItems(total)

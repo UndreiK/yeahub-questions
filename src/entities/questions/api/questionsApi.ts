@@ -1,17 +1,12 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
-import { Questions, QuestionType } from './types'
+import { QuestionApi, Questions, QuestionType } from './types'
 
 export const questionsApi = createApi({
   reducerPath: 'questionsApi',
   baseQuery: fetchBaseQuery({ baseUrl: 'https://api.yeatwork.ru' }),
   tagTypes: ['Questions'],
   endpoints: (builder) => ({
-    getQuestions: builder.query<
-      Questions,
-      QuestionApi
-      // { page: number; specializations: number; skills: number[] }
-    >({
-      // query: ({ page }) => `/questions/public-questions?page=${page}`,
+    getQuestions: builder.query<Questions, QuestionApi>({
       query: ({
         page,
         specialization,
@@ -52,13 +47,3 @@ export const questionsApi = createApi({
 })
 
 export const { useGetQuestionsQuery, useGetQuestionByIdQuery } = questionsApi
-
-export interface QuestionApi {
-  page: number
-  limit?: number
-  specialization: number | null
-  skills: number[]
-  complexity: number[]
-  rate: number[]
-  title: string
-}

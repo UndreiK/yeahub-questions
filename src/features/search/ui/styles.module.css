@@ -10,4 +10,5 @@ input {
   height: 21px;
   width: 100%;
   border: none;
+  outline: none;
 }
