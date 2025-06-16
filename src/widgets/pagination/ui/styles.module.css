@@ -1,0 +1,35 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 4px;
+}
+
+.button {
+  height: 25px;
+  /* width: 25px; */
+  border: none;
+  border-radius: 2px;
+  padding: 2px 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+}
+.button_active {
+  height: 25px;
+  /* width: 25px; */
+  border: none;
+  border-radius: 2px;
+  padding: 2px 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: #6a0bff;
+  color: #fff;
+}
+
+.button[disabled] {
+  cursor: default;
+  opacity: 0.5;
+}

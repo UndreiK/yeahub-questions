@@ -1,0 +1,13 @@
+.search {
+  height: 48px;
+  width: 100%;
+  border-radius: 68px;
+  padding: 12px 24px;
+  border: solid 1px #e8e8e8;
+}
+
+input {
+  height: 21px;
+  width: 100%;
+  border: none;
+}

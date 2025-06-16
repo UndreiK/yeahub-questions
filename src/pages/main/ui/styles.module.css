@@ -1,0 +1,17 @@
+.main {
+  background-color: #f4f4f4;
+  min-height: calc(100vh - 64px);
+}
+.container {
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* display: grid; */
+  /* grid-template-columns: 1fr 390px; */
+  max-width: 1216px;
+  width: 100%;
+  margin: 0 auto;
+  min-height: 100%;
+  padding: 8px 0;
+  gap: 24px;
+}

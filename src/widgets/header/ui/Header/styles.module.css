@@ -1,0 +1,51 @@
+.header {
+  background: #fff;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1216px;
+  width: 100%;
+  margin: 0 auto;
+  height: 64px;
+  padding: 8px 0;
+}
+
+.logo {
+  display: flex;
+  cursor: pointer;
+  gap: 24px;
+  height: 33px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+p {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.buttons {
+  display: flex;
+  gap: 26px;
+}
+
+.buttons_item {
+  cursor: pointer;
+  background-color: #6a0bff;
+  color: #fff;
+  height: 48px;
+  width: 170px;
+  border: none;
+  border-radius: 12px;
+  padding: 13px 0;
+  font-weight: 500;
+  font-size: 18px;
+}

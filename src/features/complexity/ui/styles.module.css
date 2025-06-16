@@ -1,0 +1,37 @@
+.list_block {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* align-items: center; */
+  width: 100%;
+  gap: 18px;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 8px;
+}
+
+.list_item {
+  border: solid 1px #bababa;
+  border-radius: 12px;
+  padding: 10px 12px;
+  cursor: pointer;
+}
+
+.selected {
+  border: solid 1px #bababa;
+  border-radius: 12px;
+  padding: 10px 12px;
+  cursor: pointer;
+  background-color: #5509cc;
+}
+
+a {
+  font-size: 14px;
+  font-weight: 400;
+  color: #5509cc;
+  cursor: pointer;
+}
